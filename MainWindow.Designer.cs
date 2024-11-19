@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.btn1_gb1 = new System.Windows.Forms.Button();
             this.btn2_gb1 = new System.Windows.Forms.Button();
             this.btn3_gb1 = new System.Windows.Forms.Button();
@@ -128,6 +129,7 @@
             this.btn6_gb7 = new System.Windows.Forms.Button();
             this.btn5_gb7 = new System.Windows.Forms.Button();
             this.LBLGLOBAL = new System.Windows.Forms.Label();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -143,6 +145,7 @@
             // 
             this.btn1_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb1.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb1.Name = "btn1_gb1";
@@ -155,6 +158,7 @@
             // 
             this.btn2_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb1.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb1.Name = "btn2_gb1";
@@ -167,6 +171,7 @@
             // 
             this.btn3_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb1.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb1.Name = "btn3_gb1";
@@ -179,6 +184,7 @@
             // 
             this.btn4_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb1.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb1.Name = "btn4_gb1";
@@ -191,6 +197,7 @@
             // 
             this.btn5_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb1.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb1.Name = "btn5_gb1";
@@ -203,6 +210,7 @@
             // 
             this.btn6_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb1.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb1.Name = "btn6_gb1";
@@ -215,6 +223,7 @@
             // 
             this.btn7_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb1.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb1.Name = "btn7_gb1";
@@ -227,6 +236,7 @@
             // 
             this.btn8_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb1.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb1.Name = "btn8_gb1";
@@ -239,6 +249,7 @@
             // 
             this.btn9_gb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb1.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb1.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb1.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb1.Name = "btn9_gb1";
@@ -261,6 +272,7 @@
             this.groupBox1.Controls.Add(this.btn5_gb1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
             this.groupBox1.Location = new System.Drawing.Point(15, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(231, 246);
@@ -291,6 +303,7 @@
             this.groupBox2.Controls.Add(this.btn5_gb2);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(255, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(231, 246);
@@ -311,6 +324,7 @@
             // 
             this.btn1_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb2.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb2.Name = "btn1_gb2";
@@ -323,6 +337,7 @@
             // 
             this.btn9_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb2.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb2.Name = "btn9_gb2";
@@ -335,6 +350,7 @@
             // 
             this.btn2_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb2.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb2.Name = "btn2_gb2";
@@ -347,6 +363,7 @@
             // 
             this.btn8_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb2.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb2.Name = "btn8_gb2";
@@ -359,6 +376,7 @@
             // 
             this.btn3_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb2.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb2.Name = "btn3_gb2";
@@ -371,6 +389,7 @@
             // 
             this.btn7_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb2.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb2.Name = "btn7_gb2";
@@ -383,6 +402,7 @@
             // 
             this.btn4_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb2.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb2.Name = "btn4_gb2";
@@ -395,6 +415,7 @@
             // 
             this.btn6_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb2.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb2.Name = "btn6_gb2";
@@ -407,6 +428,7 @@
             // 
             this.btn5_gb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb2.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb2.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb2.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb2.Name = "btn5_gb2";
@@ -429,6 +451,7 @@
             this.groupBox3.Controls.Add(this.btn5_gb3);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(495, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(231, 246);
@@ -449,6 +472,7 @@
             // 
             this.btn1_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb3.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb3.Name = "btn1_gb3";
@@ -461,6 +485,7 @@
             // 
             this.btn9_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb3.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb3.Name = "btn9_gb3";
@@ -473,6 +498,7 @@
             // 
             this.btn2_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb3.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb3.Name = "btn2_gb3";
@@ -485,6 +511,7 @@
             // 
             this.btn8_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb3.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb3.Name = "btn8_gb3";
@@ -497,6 +524,7 @@
             // 
             this.btn3_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb3.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb3.Name = "btn3_gb3";
@@ -509,6 +537,7 @@
             // 
             this.btn7_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb3.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb3.Name = "btn7_gb3";
@@ -521,6 +550,7 @@
             // 
             this.btn4_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb3.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb3.Name = "btn4_gb3";
@@ -533,6 +563,7 @@
             // 
             this.btn6_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb3.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb3.Name = "btn6_gb3";
@@ -545,6 +576,7 @@
             // 
             this.btn5_gb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb3.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb3.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb3.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb3.Name = "btn5_gb3";
@@ -567,6 +599,7 @@
             this.groupBox6.Controls.Add(this.btn5_gb6);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.Color.Red;
             this.groupBox6.Location = new System.Drawing.Point(495, 252);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(231, 246);
@@ -587,6 +620,7 @@
             // 
             this.btn1_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb6.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb6.Name = "btn1_gb6";
@@ -599,6 +633,7 @@
             // 
             this.btn9_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb6.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb6.Name = "btn9_gb6";
@@ -611,6 +646,7 @@
             // 
             this.btn2_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb6.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb6.Name = "btn2_gb6";
@@ -623,6 +659,7 @@
             // 
             this.btn8_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb6.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb6.Name = "btn8_gb6";
@@ -635,6 +672,7 @@
             // 
             this.btn3_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb6.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb6.Name = "btn3_gb6";
@@ -647,6 +685,7 @@
             // 
             this.btn7_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb6.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb6.Name = "btn7_gb6";
@@ -659,6 +698,7 @@
             // 
             this.btn4_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb6.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb6.Name = "btn4_gb6";
@@ -671,6 +711,7 @@
             // 
             this.btn6_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb6.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb6.Name = "btn6_gb6";
@@ -683,6 +724,7 @@
             // 
             this.btn5_gb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb6.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb6.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb6.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb6.Name = "btn5_gb6";
@@ -705,6 +747,7 @@
             this.groupBox5.Controls.Add(this.btn5_gb5);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.Red;
             this.groupBox5.Location = new System.Drawing.Point(255, 252);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(231, 246);
@@ -725,6 +768,7 @@
             // 
             this.btn1_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb5.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb5.Name = "btn1_gb5";
@@ -737,6 +781,7 @@
             // 
             this.btn9_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb5.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb5.Name = "btn9_gb5";
@@ -749,6 +794,7 @@
             // 
             this.btn2_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb5.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb5.Name = "btn2_gb5";
@@ -761,6 +807,7 @@
             // 
             this.btn8_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb5.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb5.Name = "btn8_gb5";
@@ -773,6 +820,7 @@
             // 
             this.btn3_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb5.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb5.Name = "btn3_gb5";
@@ -785,6 +833,7 @@
             // 
             this.btn7_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb5.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb5.Name = "btn7_gb5";
@@ -797,6 +846,7 @@
             // 
             this.btn4_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb5.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb5.Name = "btn4_gb5";
@@ -809,6 +859,7 @@
             // 
             this.btn6_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb5.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb5.Name = "btn6_gb5";
@@ -821,6 +872,7 @@
             // 
             this.btn5_gb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb5.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb5.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb5.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb5.Name = "btn5_gb5";
@@ -843,6 +895,7 @@
             this.groupBox4.Controls.Add(this.btn5_gb4);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.Red;
             this.groupBox4.Location = new System.Drawing.Point(15, 252);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(231, 246);
@@ -863,6 +916,7 @@
             // 
             this.btn1_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb4.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb4.Name = "btn1_gb4";
@@ -875,6 +929,7 @@
             // 
             this.btn9_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb4.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb4.Name = "btn9_gb4";
@@ -887,6 +942,7 @@
             // 
             this.btn2_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb4.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb4.Name = "btn2_gb4";
@@ -899,6 +955,7 @@
             // 
             this.btn8_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb4.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb4.Name = "btn8_gb4";
@@ -911,6 +968,7 @@
             // 
             this.btn3_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb4.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb4.Name = "btn3_gb4";
@@ -923,6 +981,7 @@
             // 
             this.btn7_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb4.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb4.Name = "btn7_gb4";
@@ -935,6 +994,7 @@
             // 
             this.btn4_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb4.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb4.Name = "btn4_gb4";
@@ -947,6 +1007,7 @@
             // 
             this.btn6_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb4.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb4.Name = "btn6_gb4";
@@ -959,6 +1020,7 @@
             // 
             this.btn5_gb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb4.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb4.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb4.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb4.Name = "btn5_gb4";
@@ -981,6 +1043,7 @@
             this.groupBox9.Controls.Add(this.btn5_gb9);
             this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.Color.Red;
             this.groupBox9.Location = new System.Drawing.Point(495, 498);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(231, 246);
@@ -1001,6 +1064,7 @@
             // 
             this.btn1_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb9.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb9.Name = "btn1_gb9";
@@ -1013,6 +1077,7 @@
             // 
             this.btn9_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb9.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb9.Name = "btn9_gb9";
@@ -1025,6 +1090,7 @@
             // 
             this.btn2_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb9.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb9.Name = "btn2_gb9";
@@ -1037,6 +1103,7 @@
             // 
             this.btn8_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb9.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb9.Name = "btn8_gb9";
@@ -1049,6 +1116,7 @@
             // 
             this.btn3_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb9.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb9.Name = "btn3_gb9";
@@ -1061,6 +1129,7 @@
             // 
             this.btn7_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb9.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb9.Name = "btn7_gb9";
@@ -1073,6 +1142,7 @@
             // 
             this.btn4_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb9.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb9.Name = "btn4_gb9";
@@ -1085,6 +1155,7 @@
             // 
             this.btn6_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb9.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb9.Name = "btn6_gb9";
@@ -1097,6 +1168,7 @@
             // 
             this.btn5_gb9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb9.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb9.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb9.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb9.Name = "btn5_gb9";
@@ -1119,6 +1191,7 @@
             this.groupBox8.Controls.Add(this.btn5_gb8);
             this.groupBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.Color.Red;
             this.groupBox8.Location = new System.Drawing.Point(255, 498);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(231, 246);
@@ -1139,6 +1212,7 @@
             // 
             this.btn1_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb8.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb8.Name = "btn1_gb8";
@@ -1151,6 +1225,7 @@
             // 
             this.btn9_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb8.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb8.Name = "btn9_gb8";
@@ -1163,6 +1238,7 @@
             // 
             this.btn2_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb8.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb8.Name = "btn2_gb8";
@@ -1175,6 +1251,7 @@
             // 
             this.btn8_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb8.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb8.Name = "btn8_gb8";
@@ -1187,6 +1264,7 @@
             // 
             this.btn3_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb8.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb8.Name = "btn3_gb8";
@@ -1199,6 +1277,7 @@
             // 
             this.btn7_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb8.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb8.Name = "btn7_gb8";
@@ -1211,6 +1290,7 @@
             // 
             this.btn4_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb8.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb8.Name = "btn4_gb8";
@@ -1223,6 +1303,7 @@
             // 
             this.btn6_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb8.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb8.Name = "btn6_gb8";
@@ -1235,6 +1316,7 @@
             // 
             this.btn5_gb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb8.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb8.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb8.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb8.Name = "btn5_gb8";
@@ -1257,6 +1339,7 @@
             this.groupBox7.Controls.Add(this.btn5_gb7);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.ForeColor = System.Drawing.Color.Red;
             this.groupBox7.Location = new System.Drawing.Point(15, 498);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(231, 246);
@@ -1277,6 +1360,7 @@
             // 
             this.btn1_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn1_gb7.Location = new System.Drawing.Point(21, 35);
             this.btn1_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn1_gb7.Name = "btn1_gb7";
@@ -1289,6 +1373,7 @@
             // 
             this.btn9_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn9_gb7.Location = new System.Drawing.Point(157, 171);
             this.btn9_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn9_gb7.Name = "btn9_gb7";
@@ -1301,6 +1386,7 @@
             // 
             this.btn2_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn2_gb7.Location = new System.Drawing.Point(89, 35);
             this.btn2_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn2_gb7.Name = "btn2_gb7";
@@ -1313,6 +1399,7 @@
             // 
             this.btn8_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn8_gb7.Location = new System.Drawing.Point(89, 171);
             this.btn8_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn8_gb7.Name = "btn8_gb7";
@@ -1325,6 +1412,7 @@
             // 
             this.btn3_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn3_gb7.Location = new System.Drawing.Point(157, 35);
             this.btn3_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn3_gb7.Name = "btn3_gb7";
@@ -1337,6 +1425,7 @@
             // 
             this.btn7_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn7_gb7.Location = new System.Drawing.Point(21, 171);
             this.btn7_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn7_gb7.Name = "btn7_gb7";
@@ -1349,6 +1438,7 @@
             // 
             this.btn4_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn4_gb7.Location = new System.Drawing.Point(21, 103);
             this.btn4_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn4_gb7.Name = "btn4_gb7";
@@ -1361,6 +1451,7 @@
             // 
             this.btn6_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn6_gb7.Location = new System.Drawing.Point(157, 103);
             this.btn6_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn6_gb7.Name = "btn6_gb7";
@@ -1373,6 +1464,7 @@
             // 
             this.btn5_gb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5_gb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5_gb7.ForeColor = System.Drawing.Color.Black;
             this.btn5_gb7.Location = new System.Drawing.Point(89, 103);
             this.btn5_gb7.Margin = new System.Windows.Forms.Padding(9);
             this.btn5_gb7.Name = "btn5_gb7";
@@ -1384,18 +1476,30 @@
             // LBLGLOBAL
             // 
             this.LBLGLOBAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLGLOBAL.Location = new System.Drawing.Point(2, 355);
+            this.LBLGLOBAL.Location = new System.Drawing.Point(110, 355);
             this.LBLGLOBAL.Name = "LBLGLOBAL";
-            this.LBLGLOBAL.Size = new System.Drawing.Size(732, 50);
+            this.LBLGLOBAL.Size = new System.Drawing.Size(520, 77);
             this.LBLGLOBAL.TabIndex = 0;
             this.LBLGLOBAL.Visible = false;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Location = new System.Drawing.Point(333, 747);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(75, 40);
+            this.btn_reset.TabIndex = 20;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 756);
-            this.Controls.Add(this.LBLGLOBAL);
+            this.ClientSize = new System.Drawing.Size(737, 789);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -1405,8 +1509,10 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.LBLGLOBAL);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(9);
             this.MaximizeBox = false;
             this.Name = "MainWindow";
@@ -1537,6 +1643,7 @@
         private System.Windows.Forms.Label lblgb8;
         private System.Windows.Forms.Label lblgb7;
         private System.Windows.Forms.Label LBLGLOBAL;
+        private System.Windows.Forms.Button btn_reset;
     }
 }
 

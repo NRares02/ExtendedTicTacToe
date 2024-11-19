@@ -29,6 +29,7 @@ namespace ExtendedTicTacToe
             InitializeComponent();
         }
 
+
         private void button_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -49,8 +50,185 @@ namespace ExtendedTicTacToe
                 isXTurn = !isXTurn;
                 turnCount++;
 
+                if (turnCount > 2)
+                {
+                    CheckWinner();
+                }
+
+                if (btn.Name== "btn1_gb1")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb1")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if(btn.Name == "btn3_gb1")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb1")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb1")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb1")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb1")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb1")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb1")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+
                 // Verifică dacă avem un câștigător
-                CheckWinner();
+
             }
         }
         private void button_Click2(object sender, EventArgs e)
@@ -74,7 +252,184 @@ namespace ExtendedTicTacToe
                 turnCount2++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner2();
+                if (turnCount2 > 2)
+                {
+                    CheckWinner2();
+                }
+
+                if (btn.Name == "btn1_gb2")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb2")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb2")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb2")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb2")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb2")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb2")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb2")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb2")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+
+                
             }
         }
         private void button_Click3(object sender, EventArgs e)
@@ -98,7 +453,183 @@ namespace ExtendedTicTacToe
                 turnCount3++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner3();
+                if (turnCount3 > 2)
+                {
+                    CheckWinner3();
+                }
+
+                if (btn.Name == "btn1_gb3")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb3")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb3")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb3")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb3")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb3")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb3")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb3")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb3")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+
             }
         }
         private void button_Click4(object sender, EventArgs e)
@@ -122,7 +653,182 @@ namespace ExtendedTicTacToe
                 turnCount4++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner4();
+                if (turnCount4++ > 2)
+                {
+                    CheckWinner4();
+                }
+
+                if (btn.Name == "btn1_gb4")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb4")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb4")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb4")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb4")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb4")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb4")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb4")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb4")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
             }
         }
         private void button_Click5(object sender, EventArgs e)
@@ -146,7 +852,182 @@ namespace ExtendedTicTacToe
                 turnCount5++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner5();
+                if (turnCount5++ > 2)
+                {
+                    CheckWinner5();
+                }
+
+                if (btn.Name == "btn1_gb5")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb5")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb5")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb5")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb5")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb5")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb5")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb5")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb5")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
             }
         }
         private void button_Click6(object sender, EventArgs e)
@@ -170,7 +1051,182 @@ namespace ExtendedTicTacToe
                 turnCount6++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner6();
+                if (turnCount6 > 2)
+                {
+                    CheckWinner6();
+                }
+
+                if (btn.Name == "btn1_gb6")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb6")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb6")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb6")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb6")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb6")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb6")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb6")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb6")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
             }
         }
         private void button_Click7(object sender, EventArgs e)
@@ -194,7 +1250,184 @@ namespace ExtendedTicTacToe
                 turnCount7++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner7();
+                if (turnCount7 > 2)
+                {
+                    CheckWinner7();
+                }
+
+                if (btn.Name == "btn1_gb7")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb7")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb7")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb7")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb7")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb7")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb7")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb7")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb7")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+
+                
             }
         }
         private void button_Click8(object sender, EventArgs e)
@@ -216,9 +1449,184 @@ namespace ExtendedTicTacToe
                 // Schimbă rândul
                 isXTurn = !isXTurn;
                 turnCount8++;
-
+                
                 // Verifică dacă avem un câștigător
-                CheckWinner8();
+                if (turnCount8 > 2)
+                {
+                    CheckWinner8();
+                }
+
+                if (btn.Name == "btn1_gb8")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb8")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb8")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb8")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb8")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb8")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb8")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb8")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb8")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
             }
         }
         private void button_Click9(object sender, EventArgs e)
@@ -242,7 +1650,182 @@ namespace ExtendedTicTacToe
                 turnCount9++;
 
                 // Verifică dacă avem un câștigător
-                CheckWinner9();
+                if (turnCount9 > 2)
+                {
+                    CheckWinner9();
+                }
+
+                if (btn.Name == "btn1_gb9")
+                {
+                    if (LBLGB1.Text == "")
+                    {
+                        groupBox1.Enabled = true;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn2_gb9")
+                {
+                    if (LBLGB2.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = true;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn3_gb9")
+                {
+                    if (lblgb3.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = true;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn4_gb9")
+                {
+                    if (lblgb4.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = true;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn5_gb9")
+                {
+                    if (lblgb5.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = true;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn6_gb9")
+                {
+                    if (lblgb6.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = true;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn7_gb9")
+                {
+                    if (lblgb7.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = true;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn8_gb9")
+                {
+                    if (lblgb8.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = true;
+                        groupBox9.Enabled = false;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
+                else if (btn.Name == "btn9_gb9")
+                {
+                    if (lblgb9.Text == "")
+                    {
+                        groupBox1.Enabled = false;
+                        groupBox2.Enabled = false;
+                        groupBox3.Enabled = false;
+                        groupBox4.Enabled = false;
+                        groupBox5.Enabled = false;
+                        groupBox6.Enabled = false;
+                        groupBox7.Enabled = false;
+                        groupBox8.Enabled = false;
+                        groupBox9.Enabled = true;
+                    }
+                    else
+                    {
+                        CheckIfSectionIsActive();
+                    }
+                }
             }
         }
 
@@ -606,6 +2189,90 @@ namespace ExtendedTicTacToe
             }
         }
 
+        private void CheckIfSectionIsActive()
+        {
+            if (LBLGB1.Text == "")
+            {
+                groupBox1.Enabled = true;
+            }
+            else
+            {
+                groupBox1.Enabled = false;
+            }
+
+            if (LBLGB2.Text == "")
+            {
+                groupBox2.Enabled = true;
+            }
+            else
+            {
+                groupBox2.Enabled = false;
+            }
+
+            if (lblgb3.Text == "")
+            {
+                groupBox3.Enabled = true;
+            }
+            else
+            {
+                groupBox3.Enabled = false;
+            }
+
+            if (lblgb4.Text == "")
+            {
+                groupBox4.Enabled = true;
+            }
+            else
+            {
+                groupBox4.Enabled = false;
+            }
+
+            if (lblgb5.Text == "")
+            {
+                groupBox5.Enabled = true;
+            }
+            else
+            {
+                groupBox5.Enabled = false;
+            }
+
+            if (lblgb6.Text == "")
+            {
+                groupBox6.Enabled = true;
+            }
+            else
+            {
+                groupBox6.Enabled = false;
+            }
+
+            if (lblgb7.Text == "")
+            {
+                groupBox7.Enabled = true;
+            }
+            else
+            {
+                groupBox7.Enabled = false;
+            }
+
+            if (lblgb8.Text == "")
+            {
+                groupBox8.Enabled = true;
+            }
+            else
+            {
+                groupBox8.Enabled = false;
+            }
+
+            if (lblgb9.Text == "")
+            {
+                groupBox9.Enabled = true;
+            }
+            else
+            {
+                groupBox9.Enabled = false;
+            }
+        }
+
         private void CheckWinnerGlobal()
         {
             bool winnerFound = false;
@@ -657,21 +2324,149 @@ namespace ExtendedTicTacToe
             }
         }
 
-        private void ResetGame()
+        private void ResetButtons(Control parent)
         {
-            // Resetează butoanele și variabilele
-            isXTurn = true;
-            turnCount = 0;
-
-            foreach (Control c in Controls)
+            foreach (Control c in parent.Controls)
             {
                 if (c is Button)
                 {
                     ((Button)c).Text = "";
                 }
+                else if (c.HasChildren)
+                {
+                    // Apel recursiv pentru a verifica și controalele din containere
+                    ResetButtons(c);
+                }
             }
         }
 
-    }
 
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            // Resetează butoanele și variabilele
+            isXTurn = true;
+            turnCount = 0;   // Numără câte mutări s-au făcut
+            turnCount2 = 0;
+            turnCount3 = 0;
+            turnCount4 = 0;
+            turnCount5 = 0;
+            turnCount6 = 0;
+            turnCount7 = 0;
+            turnCount8 = 0;
+            turnCount9 = 0;
+            LBLGB1.Text = "";
+            LBLGB2.Text = "";
+            lblgb3.Text = "";
+            lblgb4.Text = "";
+            lblgb5.Text = "";
+            lblgb6.Text = "";
+            lblgb7.Text = "";
+            lblgb8.Text = "";
+            lblgb9.Text = "";
+            LBLGLOBAL.Text = "";
+            groupBox1.Enabled = true;
+            groupBox2.Enabled = true;
+            groupBox3.Enabled = true;
+            groupBox4.Enabled = true;
+            groupBox5.Enabled = true;
+            groupBox6.Enabled = true;
+            groupBox7.Enabled = true;
+            groupBox8.Enabled = true;
+            groupBox9.Enabled = true;
+
+
+            ResetButtons(this);
+            btn_reset.Text = "Reset";
+
+        }
+
+        /*private void btn2_gb1_Click(object sender, EventArgs e)
+        {
+            // Dacă butonul nu este deja apăsat (fără text), plasăm X sau O
+            if (btn2_gb1.Text == "")
+            {
+                if (isXTurn)
+                {
+                    btn2_gb1.Text = "X";
+                }
+                else
+                {
+                    btn2_gb1.Text = "O";
+                }
+
+                // Schimbă rândul
+                isXTurn = !isXTurn;
+                turnCount++;
+
+                if (LBLGB2.Text == "")
+                {
+                    groupBox1.Enabled = false;
+                    groupBox2.Enabled = true;
+                    groupBox3.Enabled = false;
+                    groupBox4.Enabled = false;
+                    groupBox5.Enabled = false;
+                    groupBox6.Enabled = false;
+                    groupBox7.Enabled = false;
+                    groupBox8.Enabled = false;
+                    groupBox9.Enabled = false;
+                }
+                else
+                {
+                    CheckIfSectionIsActive();
+                }
+
+
+                // Verifică dacă avem un câștigător
+                if (turnCount2 > 2)
+                {
+                    CheckWinner2();
+                }
+            }
+        }*/
+
+        /*private void btn1_gb2_Click(object sender, EventArgs e)
+        {
+            // Dacă butonul nu este deja apăsat (fără text), plasăm X sau O
+            if (btn1_gb2.Text == "")
+            {
+                if (isXTurn)
+                {
+                    btn1_gb2.Text = "X";
+                }
+                else
+                {
+                    btn1_gb2.Text = "O";
+                }
+
+                // Schimbă rândul
+                isXTurn = !isXTurn;
+                turnCount2++;
+
+                if (LBLGB1.Text == "")
+                {
+                    groupBox1.Enabled = true;
+                    groupBox2.Enabled = false;
+                    groupBox3.Enabled = false;
+                    groupBox4.Enabled = false;
+                    groupBox5.Enabled = false;
+                    groupBox6.Enabled = false;
+                    groupBox7.Enabled = false;
+                    groupBox8.Enabled = false;
+                    groupBox9.Enabled = false;
+                }
+                else
+                {
+                    CheckIfSectionIsActive();
+                }
+
+                // Verifică dacă avem un câștigător
+                if (turnCount2 > 2)
+                {
+                    CheckWinner2();
+                }
+            }
+        }*/
+
+
+    }
 }

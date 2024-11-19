@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\bin\Release\ExtendedTicTacToe.exe.config
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\bin\Release\ExtendedTicTacToe.exe
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\bin\Release\ExtendedTicTacToe.pdb
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.MainWindow.resources
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.Properties.Resources.resources
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.exe
+C:\Users\admin\source\repos\ExtendedTicTacToe\ExtendedTicTacToe\ExtendedTicTacToe\obj\Release\ExtendedTicTacToe.pdb
